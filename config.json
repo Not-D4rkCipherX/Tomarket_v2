@@ -3,7 +3,7 @@
     "play_game": true,
     "change_tomato_to_star": false,
     "claim_weekly_airdrop": true,
-    "complete_task": true,
+    "complete_task": false,
     "use_free_spin": true,
     "unlock_levels": false,
     "upgrade_max_level": false,
