@@ -788,6 +788,17 @@ class Tomartod:
     def log(self, msg):
         now = datetime.now().isoformat(" ").split(".")[0]
         print(f"{hitam}[{now}]{reset} {msg}{reset}")
+
+    def main(self):
+        
+        arg = argparse.ArgumentParser()
+        arg.add_argument("--data", default="data.txt")
+        arg.add_argument("--config", default="config.json")
+        arg.add_argument("--proxy", default="proxies.txt")
+        arg.add_argument("--marinkitagawa", action="store_true")
+        args = arg.parse_args()
+        if not args.marinkitagawa:
+            os.system("cls" if os.name == "nt" else "clear")
         print(merah + f" before start please '{hijau}git pull{hijau}' to update bot")
         print()
         self.load_config(args.config)
