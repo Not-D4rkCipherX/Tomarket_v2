@@ -790,27 +790,6 @@ class Tomartod:
         print(f"{hitam}[{now}]{reset} {msg}{reset}")
 
     def main(self):
-        banner = r"""
-          _____   _    _    _____   _    _   __  __   ____    ______   _____  
-         / ____| | |  | |  / ____| | |  | | |  \/  | |  _ \  |  ____| |  __ \ 
-        | |      | |  | | | |      | |  | | | \  / | | |_) | | |__    | |__) |
-        | |      | |  | | | |      | |  | | | |\/| | |  _ <  |  __|   |  _  / 
-        | |____  | |__| | | |____  | |__| | | |  | | | |_) | | |____  | | \ \ 
-         \_____|  \____/   \_____|  \____/  |_|  |_| |____/  |______| |_|  \_\ """
-
-
-        arg = argparse.ArgumentParser()
-        arg.add_argument("--data", default="data.txt")
-        arg.add_argument("--config", default="config.json")
-        arg.add_argument("--proxy", default="proxies.txt")
-        arg.add_argument("--marinkitagawa", action="store_true")
-        args = arg.parse_args()
-        if not args.marinkitagawa:
-            os.system("cls" if os.name == "nt" else "clear")
-        print(Fore.GREEN + Style.BRIGHT + banner + Style.RESET_ALL)
-        print()
-        print(biru + f" Tomarket Telegram Bot")
-        print(merah + f" FREE TO USE = Join us on {putih}t.me/cucumber_scripts")
         print(merah + f" before start please '{hijau}git pull{hijau}' to update bot")
         print()
         self.load_config(args.config)
