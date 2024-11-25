@@ -1,9 +1,9 @@
 {
     "interval": 1,
-    "play_game": false,
+    "play_game": true,
     "change_tomato_to_star": false,
-    "claim_weekly_airdrop": false,
-    "complete_task": false,
+    "claim_weekly_airdrop": true,
+    "complete_task": true,
     "use_free_spin": true,
     "unlock_levels": false,
     "upgrade_max_level": false,
