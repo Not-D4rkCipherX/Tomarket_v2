@@ -788,8 +788,6 @@ class Tomartod:
     def log(self, msg):
         now = datetime.now().isoformat(" ").split(".")[0]
         print(f"{hitam}[{now}]{reset} {msg}{reset}")
-
-    def main(self):
         print(merah + f" before start please '{hijau}git pull{hijau}' to update bot")
         print()
         self.load_config(args.config)
